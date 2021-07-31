@@ -1,0 +1,298 @@
+:root {
+    --primary-color: rgb(11, 102, 19);
+    --primary-color-opacity: rgba(11, 102, 19, .75);
+    --secondary-color: rgb(71, 142, 209);
+    --tertiary-color: rgb(240, 226, 106); 
+    --quaternary-color: black;
+}
+
+* { box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    border: 1px solid var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    /* border: 1px solid var(--secondary-color); */
+    width: 100%;
+    /* background: var(--primary-color); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url('../images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+
+}
+
+header h1 {
+    /* border: 1px solid var(--secondary-color); */
+    font-size: 40px;
+    padding: 0 20px;
+    text-shadow: 7px 5px 10px rgba(0, 0, 0, .5);
+}
+
+.nav-bar ul {
+    /* border: 1px solid var(--secondary-color); */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;  
+}
+
+.nav-bar ul li a {
+    /* border: 1px solid var(--tertiary-color); */
+    padding: 0 20px;
+    margin: 0 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-shadow: 7px 5px 10px rgba(0, 0, 0, .5);
+}
+
+.bio {
+    /* border: 1px solid var(--quaternary-color); */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('../images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+#bio-contain {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    width: 50%;
+    /* border: 1px solid var(--quaternary-color); */
+    /* background-color: var(--primary-color-opacity); */
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#bio-pic {
+    height: 400px;
+    width: 50%;
+    /* text-align: center; */
+    background-image: url('../images/bio-pic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    /* border: 1px solid var(--quaternary-color); */
+    border-radius: 5px;
+
+}
+
+#bio-writing {
+    /* border: 1px solid var(--quaternary-color); */
+    width: 50%;
+    text-shadow: 7px 5px 10px rgba(0, 0, 0, .5);
+    background-color: var(--primary-color-opacity);
+
+}
+
+.projects {
+    /* border: 1px solid var(--secondary-color); */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    background-image: url('../images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.projects div {
+    border: 10px solid var(--secondary-color); 
+    height: 300px;
+    width: 30%;
+    background-size: cover;
+    background-position-x: right;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 15px;
+}
+
+.projects div a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--quaternary-color);
+    border: 1px solid var(--quaternary-color);
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    text-shadow: 7px 5px 10px rgba(0, 0, 0, .5);
+} 
+
+#run-buddy {
+    background-image: url('../images/run-buddy.jpg');
+    width: 60%;
+    height: 600px;
+    /* width: 30%;
+    background-size: cover;
+    background-position-x: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;  */
+}
+
+#horiseon {
+    background-image: url('../images/horiseon.jpg');
+    /* height: 300px;
+    width: 30%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;  */
+}
+
+#portfolio {
+    background-image: url('../images/bio-pic.jpg');
+    /* height: 300px;
+    width: 30%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;  */
+}
+
+.contact {
+    /* border: 5px solid var(--quaternary-color); */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-image: url('../images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.contact div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: column;
+}
+
+.contact div a {
+    padding: 0 20px;
+    margin: 20px;
+    list-style: none;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--tertiary-color);
+}
+
+#email {
+    border: 1px solid var(--quaternary-color);
+    background-color: var(--primary-color-opacity);
+    height: 24%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#phone {
+    border: 1px solid var(--quaternary-color);
+    background-color: var(--primary-color-opacity);
+    height: 24%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#github {
+    border: 1px solid var(--quaternary-color);
+    background-color: var(--primary-color-opacity);
+    height: 24%;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+#linkedin {
+    border: 1px solid var(--quaternary-color);
+    background-color: var(--primary-color-opacity);
+    height: 24%;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+/* footer {
+    border: 1px solid var(--quaternary-color);
+    width: 100%;
+    background: var(--primary-color);
+} */
+
+@media screen and (max-width: 768px) {
+    header {
+    justify-content: center;
+    }
+}
+
+@media screen and (max-width: 717px) {
+    #bio-contain {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #horiseon {
+        background-position: center;
+    }
+
+    #portfolio {
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .nav-bar ul li a {
+        padding: 0 auto;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 397px) {
+    .contact div div h2 {
+        display: none;
+    }
+}
