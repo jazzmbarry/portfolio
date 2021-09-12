@@ -156,16 +156,25 @@ header h1 {
     text-shadow: 7px 5px 10px rgba(0, 0, 0, .5);
 } 
 
-#run-buddy {
-    background-image: url('../images/run-buddy.jpg');
+#froogal-flyers {
+    background-image: url('../images/froogal-flyers.png');
+    background-position: center;
     width: 60%;
     height: 600px;
+}
+
+#run-buddy {
+    background-image: url('../images/run-buddy.jpg');
     /* width: 30%;
     background-size: cover;
     background-position-x: right;
     display: flex;
     align-items: center;
     justify-content: center;  */
+}
+
+#robot-gladiators{
+    background-image: url('../images/robot-gladiator.jpg');
 }
 
 #horiseon {
