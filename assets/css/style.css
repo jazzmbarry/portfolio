@@ -154,13 +154,20 @@ header h1 {
     background-color: var(--tertiary-color);
     border-radius: 10px;
     text-shadow: 7px 5px 10px rgba(0, 0, 0, .5);
-} 
+}
 
-#froogal-flyers {
-    background-image: url('../images/froogal-flyers.png');
+#the-powder-project {
+    background-image: url('../images/the-powder-project.png');
     background-position: center;
     width: 60%;
     height: 600px;
+}
+
+#froogal-flyers {
+    background-image: url('../images/froogal-flyers.png');
+    /* background-position: center;
+    width: 60%;
+    height: 600px; */
 }
 
 #run-buddy {
